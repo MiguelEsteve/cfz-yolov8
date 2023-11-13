@@ -1,0 +1,6 @@
+GroundingDINO/
+*.mp4
+*.jpg
+*.jpeg
+.idea
+tests/runs
