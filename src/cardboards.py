@@ -132,9 +132,10 @@ class CardBoardInstanceSegmentation:
             print(f"{dataset_yaml} not found")
 
         results = self.model.train(data=dataset_yaml,
-                                   epochs=10,
+                                   epochs=1,
                                    batch=4,
-                                   verbose=True)
+                                   verbose=True,
+                                   project=config.DATASETS_PATH)
         return results
 
     def predict(self, x, checkpoint: str = None):
@@ -142,7 +143,9 @@ class CardBoardInstanceSegmentation:
         if not os.path.exists(checkpoint):
             raise FileNotFoundError(f'{checkpoint}')
         self.model = YOLO(checkpoint)
-        results = self.model.predict(source=x, save=True)
+        results = self.model.predict(source=x,
+                                     save=True,
+                                     project=config.DATASETS_PATH)
         return results
 
     @staticmethod
