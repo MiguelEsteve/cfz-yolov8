@@ -1,0 +1,10 @@
+ffmpeg-python==0.2.0
+openai-whisper==20230314
+opencv-python==4.8.1.78
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+matplotlib==3.8.1
+pandas==2.0.2
+tensorboard==2.13.0
+ray==2.7.1
+ray[train]==1.16.0
+blinker==1.6.2

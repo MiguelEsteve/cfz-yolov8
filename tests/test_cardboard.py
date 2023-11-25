@@ -108,16 +108,16 @@ if __name__ == '__main__':
     # t.test_apply_to_video()
 
     # ------------------------------------------
-    t = TestCardboardInstanceSegmentation()
-    t.test_finetune()
+    # t = TestCardboardInstanceSegmentation()
+    # t.test_finetune()
     # t.test_predict()
     # t.test_apply_to_video()
 
     # ------------------------------------------
-    # t = TestCardBoardFastSAM()
+    t = TestCardBoardFastSAM()
     # t.test_predict()
     # t.test_eval()
-    # t.test_apply_to_video()
+    t.test_apply_to_video()
 
     # ------------------------------------------
     # t = TestAll()
